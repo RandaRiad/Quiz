@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string-array name="category">
+        <item>bash</item>
+        <item>linux</item>
+        <item>docker</item>
+        <item>sql</item>
+
+        <item>devops</item>
+        <item>code</item>
+    </string-array>
+    <string name="Hard">Hard</string>
+    <string name="Easy">Easy</string>
+    <string name="Medium">Medium</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+<string name="key" >bmZTW0FPf77yLTS2Ptfqa1MOAjGv0SK1JkUnUnZg</string>
+
+</resources>

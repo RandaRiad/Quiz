@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_cardview"
+    style="@style/MyCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/image_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/quiz" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_16sdp"
+            android:paddingStart="@dimen/_20sdp">
+
+            <!-- Title, secondary and supporting text -->
+
+            <TextView
+                android:id="@+id/name_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="course"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_15ssp" />
+
+            <ImageView
+                android:id="@+id/arraw_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_expand_less_24" />
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/diffculty_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_15sdp"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/easy_btn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="@dimen/_13sdp"
+                android:paddingRight="@dimen/_13sdp"
+                android:text="Easy"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/medium_btn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="@dimen/_13sdp"
+                android:paddingRight="@dimen/_13sdp"
+                android:text="Medium"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hard_btn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="@dimen/_13sdp"
+                android:paddingRight="@dimen/_13sdp"
+                android:text="Hard"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

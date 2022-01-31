@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Fragments.YourResultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imageViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/winner"
+            app:layout_constraintBottom_toTopOf="@+id/textResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/cherry_cream_soda"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/logoColor"
+            android:textSize="@dimen/_28ssp"
+            app:layout_constraintBottom_toTopOf="@+id/resultProgress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewResult" />
+
+        <ProgressBar
+            android:id="@+id/resultProgress"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle_progress"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+        <TextView
+            android:id="@+id/percentageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="TextView"
+            android:textColor="@color/logoColor"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/resultProgress"
+            app:layout_constraintEnd_toEndOf="@+id/resultProgress"
+            app:layout_constraintStart_toStartOf="@+id/resultProgress"
+            app:layout_constraintTop_toTopOf="@+id/resultProgress" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/yourResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultProgress">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="Correct Answers"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_22ssp" />
+
+            <TextView
+                android:id="@+id/correctAnsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:background="@color/pink"
+                android:fontFamily="@font/arbutus_slab"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/logoColor"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/yourResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="@color/logoColor"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="See Answers"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

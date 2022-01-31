@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".UI.Fragments.QuestionsFragments">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarLoader"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@color/blue"
+            android:progressTint="@color/blue"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/questionLinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:fontFamily="@font/aldrich"
+                android:paddingTop="@dimen/_16sdp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                android:textColor="@color/blue" />
+
+            <ProgressBar
+                android:id="@+id/progressBarQuestion"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:indeterminateTint="@color/blue"
+                android:progress="10" />
+
+            <TextView
+                android:id="@+id/question_text_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@color/pink"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_15ssp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/checkboxlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/boxa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <CheckBox
+                        android:id="@+id/boxb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <CheckBox
+                        android:id="@+id/boxc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <CheckBox
+                        android:id="@+id/boxd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <CheckBox
+                        android:id="@+id/boxe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <CheckBox
+                        android:id="@+id/boxf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/checkboxbg"
+                        android:fontFamily="@font/arbutus_slab"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="CheckBox"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <Button
+                        android:id="@+id/fragment_next"
+                        style="@style/myButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/pink"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="Next Question"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
